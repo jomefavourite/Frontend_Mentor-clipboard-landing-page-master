@@ -1,0 +1,168 @@
+$desktop: 700px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@include desktop() {
+    .btn {
+        display: flex;
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .header {
+        background: url(../images/bg-header-desktop.png) no-repeat;
+        background-size: cover;
+    }
+
+    .main {
+        &_content_one {
+            p {
+                max-width: 690px;
+                margin: auto;
+            }
+
+            &--first {
+                p {
+                    margin-bottom: 10px;
+                }
+
+            }
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            figure {
+                flex: 2;
+                max-width: 700px;
+                margin-right: 2em;
+            }
+
+            &_child {
+                flex: 1;
+                margin: auto 0;
+                margin-left: 2em;
+
+                > div {
+                    // margin: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10%;
+
+                    h3,p {
+                        text-align: left;
+                    }
+
+                    p {
+                        margin: 0;
+                        max-width: 400px;
+                    }
+                }
+            }
+        }
+
+        &_content_second {
+            &--first {
+                p {
+                    max-width: 720px;
+                    margin: auto;
+                }
+
+                figure {
+                    max-width: 950px;
+                    margin: auto;
+                }
+            }
+        }
+
+        &_content_second {
+            &--second {
+                // width: 100%;
+                margin: auto;
+
+                .head {
+                    margin: 0 auto;
+                }
+
+                div {
+                    // width: 100%;
+                    margin: 2em auto;
+                    // max-width: 50em;
+                    flex: 1;
+
+                    > figure {
+                        // margin: 0 auto;
+                    }
+                }
+    
+                div + div {
+                    padding-left: 30px;
+                }
+            }
+
+        }
+
+        .logos {
+            display: flex;
+            margin: 2em auto 8em;
+
+            img + img {
+                margin-left: 20px;
+            }
+        }
+
+        .main_last {
+            p {
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            .btn {
+                margin-top: 1em;
+            }
+        }
+    }
+
+    .footer {
+        text-align: left;
+
+        &_container {
+            width: 100%;
+            // margin: 0 auto;
+
+            figure {
+                display: block;
+                margin-top: 1.5em;
+            }
+
+            p {
+                margin-top: 0;
+            }
+
+            .attribution {
+                margin-top: 2em;
+            }
+        }
+
+
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .footer_container > div{
+            // display: flex;
+        }
+
+        
+    }
+}
+

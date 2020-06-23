@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem 4rem;
+  border-radius: 2em;
+  background-color: #26baa4;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: inset -2px -3px #1d907f;
+          box-shadow: inset -2px -3px #1d907f;
+}
+
+.button--green::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 1px 10px rgba(96, 212, 154, 0.849);
+          box-shadow: 0px 1px 10px rgba(96, 212, 154, 0.849);
+  z-index: -10;
+}
+
+.button--blue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 1px 10px rgba(96, 150, 212, 0.849);
+          box-shadow: 0px 1px 10px rgba(96, 150, 212, 0.849);
+  z-index: -10;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+.button--blue {
+  background-color: #6173ff;
+  -webkit-box-shadow: inset -2px -3px #2e46ff;
+          box-shadow: inset -2px -3px #2e46ff;
+}
+
+h1, h2, h3 {
+  color: #4c545d;
+}
+
+p {
+  color: #9fabb2;
+  line-height: 1.5;
+}
+
+.header {
+  background: url(../images/bg-header-mobile.png) no-repeat;
+  background-size: cover;
+  padding: 8em 0;
+}
+
+.header__content {
+  text-align: center;
+}
+
+.header__content h1 {
+  padding: 3rem 0 0;
+}
+
+.header__content p {
+  margin: 1em auto 3em;
+  max-width: 644px;
+}
+
+.main {
+  text-align: center;
+}
+
+.main_content_one {
+  margin-bottom: 6em;
+}
+
+.main_content_one--first > h2 {
+  margin-bottom: .7em;
+  font-weight: 600;
+}
+
+.main_content_one .comp {
+  margin: 4em 0;
+  width: 100%;
+}
+
+.main_content_one--second .flex_child div {
+  margin-top: 3em;
+}
+
+.main_content_one .second--h3 {
+  margin-bottom: .5em;
+}
+
+.main_content_second--first > h2 {
+  margin-bottom: .7em;
+}
+
+.main_content_second--first .devices {
+  margin: 4em 0 5em;
+  width: 100%;
+}
+
+.main_content_second--second .head > h2 {
+  margin-bottom: .7em;
+}
+
+.main_content_second--second .one {
+  margin: 4em auto;
+}
+
+.main_content_second--second .one p {
+  max-width: 360px;
+  margin: auto;
+}
+
+.main_content_second--second .one > figure {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.main .logos {
+  margin: 8em auto;
+}
+
+.main .logos > img {
+  display: block;
+  margin: auto;
+  margin-top: 4em;
+}
+
+.main_last {
+  margin-bottom: 8em;
+}
+
+.main_last > h2 {
+  margin-bottom: .7em;
+}
+
+.main_last p {
+  margin-bottom: 1em;
+}
+
+.footer {
+  background-color: #f4f5f6;
+  text-align: center;
+  padding: 3em 0;
+}
+
+.footer figure .logo {
+  width: 50px;
+}
+
+.footer .footer_container {
+  width: 80%;
+  margin: 2em auto;
+  max-width: 1440px;
+}
+
+.footer .footer_container p {
+  font-weight: 600;
+  color: #4c545d;
+  margin-top: 1.5em;
+  cursor: pointer;
+}
+
+.footer .footer_container p:hover {
+  color: #26baa4;
+}
+
+.footer .footer_icons {
+  cursor: pointer;
+  margin-top: 2em;
+}
+
+.footer .footer_icons img + img {
+  margin-left: 2em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 700px) {
+  .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 550px;
+    margin: auto;
+  }
+  .header {
+    background: url(../images/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+  }
+  .main_content_one p {
+    max-width: 690px;
+    margin: auto;
+  }
+  .main_content_one--first p {
+    margin-bottom: 10px;
+  }
+  .main .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .flex figure {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    max-width: 700px;
+    margin-right: 2em;
+  }
+  .main .flex_child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: auto 0;
+    margin-left: 2em;
+  }
+  .main .flex_child > div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10%;
+  }
+  .main .flex_child > div h3, .main .flex_child > div p {
+    text-align: left;
+  }
+  .main .flex_child > div p {
+    margin: 0;
+    max-width: 400px;
+  }
+  .main_content_second--first p {
+    max-width: 720px;
+    margin: auto;
+  }
+  .main_content_second--first figure {
+    max-width: 950px;
+    margin: auto;
+  }
+  .main_content_second--second {
+    margin: auto;
+  }
+  .main_content_second--second .head {
+    margin: 0 auto;
+  }
+  .main_content_second--second div {
+    margin: 2em auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .main_content_second--second div + div {
+    padding-left: 30px;
+  }
+  .main .logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2em auto 8em;
+  }
+  .main .logos img + img {
+    margin-left: 20px;
+  }
+  .main .main_last p {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .main .main_last .btn {
+    margin-top: 1em;
+  }
+  .footer {
+    text-align: left;
+  }
+  .footer_container {
+    width: 100%;
+  }
+  .footer_container figure {
+    display: block;
+    margin-top: 1.5em;
+  }
+  .footer_container p {
+    margin-top: 0;
+  }
+  .footer_container .attribution {
+    margin-top: 2em;
+  }
+  .footer .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=style.css.map */
