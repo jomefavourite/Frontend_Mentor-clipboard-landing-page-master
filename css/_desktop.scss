@@ -111,6 +111,11 @@ $desktop: 700px;
         .logos {
             display: flex;
             margin: 2em auto 8em;
+            
+            img {
+                width: 12vw;
+                max-width: 165px;
+            }
 
             img + img {
                 margin-left: 20px;
