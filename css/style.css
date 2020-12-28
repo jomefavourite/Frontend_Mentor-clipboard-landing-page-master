@@ -312,6 +312,10 @@ p {
     display: flex;
     margin: 2em auto 8em;
   }
+  .main .logos img {
+    width: 12vw;
+    max-width: 165px;
+  }
   .main .logos img + img {
     margin-left: 20px;
   }
